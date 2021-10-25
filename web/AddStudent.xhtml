@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <div>TODO write content</div>
+        <h:form>
+            <a>Prénom</a>
+            <a>Age</a>
+            <a>Prénom</a>
+             <a>Email</a>
+        </h:form>
+    </h:body>
+    
+        <h:body>
+        <h:form>
+            <h:dataTable value="#{formerManager.listFormer}" var="item">
+                <h:column>
+                    <h:outputText value="#{item.formerFirstName}"/>
+                </h:column>
+                <h:column>
+                    <h:outputText value="#{item.formerLastName}"/>
+                </h:column>
+            </h:dataTable>
+        
+            <h:outputLabel value="Prénom : "></h:outputLabel>
+            <h:inputText value="#{studentManager.lastname}"></h:inputText>
+            <h:outputLabel value="Age : "></h:outputLabel>
+            <h:inputText value="#{studentManager.age}"></h:inputText>            
+            <h:outputLabel value="Nom : "></h:outputLabel>
+            <h:inputText value="#{studentManager.firstname}"></h:inputText>
+            <h:outputLabel value="Email : "></h:outputLabel>
+            <h:inputText value="#{studentManager.mail}"></h:inputText>
+            <h:outputLabel value="Téléphone : "></h:outputLabel>
+            <h:inputText value="#{studentManager.phoneNumber}"></h:inputText>     
+            <h:commandButton value="Valider" action="#{studentManager.addStudent()}"/>
+            
+        </h:form>
+    </h:body>
+</html>

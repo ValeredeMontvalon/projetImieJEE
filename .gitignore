@@ -1,0 +1,17 @@
+lib/*
+build/*
+/dist/*
+nbproject/*
+nbproject/private/private.xml
+<<<<<<< origin/master
+=======
+/dist/
+nbproject/build-impl.xml~
+nbproject/build-impl.xml
+nbproject/build-impl.xml
+nbproject/project.xml
+nbproject/ant-deploy.xml
+>>>>>>> local
+nbproject/build-impl.xml
+nbproject/build-impl.xml~
+nbproject/*
